@@ -37,7 +37,7 @@ Lord-Ganesha-Animation/
 
 ##  Live Demo
 
-**Live Demo:** 
+**Live Demo:**  https://rajnishkumar802127bxr-art.github.io/ganessh_animation/
 
 ##  Purpose
 
@@ -53,4 +53,4 @@ B.Tech – Electronics & Communication Engineering
 
 If you like this project, please  **star the repository** on GitHub.
 
-🙏 **Ganpati Bappa Morya!** 🕉️
+ **Ganpati Bappa Morya!** 
