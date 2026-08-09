@@ -1,0 +1,692 @@
+/* ================================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   BODY
+================================ */
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Georgia, serif;
+
+    background:
+        radial-gradient(circle at center,
+        #ffcc66 0%,
+        #c85a16 35%,
+        #571005 75%,
+        #1b0200 100%);
+
+    color: #fff;
+}
+
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    animation: appear 2s ease;
+}
+
+
+/* ================================
+   OM SYMBOL
+================================ */
+
+.mandala {
+    position: absolute;
+
+    top: 35px;
+
+    font-size: 80px;
+
+    color: #ffd86b;
+
+    opacity: 0.25;
+
+    animation: rotate 20s linear infinite;
+}
+
+
+/* ================================
+   GANESHA
+================================ */
+
+.ganesha {
+    position: relative;
+
+    width: 330px;
+    height: 400px;
+
+    margin-top: 30px;
+
+    animation: float 3s ease-in-out infinite;
+
+    filter:
+        drop-shadow(0 0 20px #ffb300)
+        drop-shadow(0 0 45px rgba(255, 100, 0, 0.7));
+}
+
+
+/* Crown */
+
+.crown {
+    position: absolute;
+
+    top: -50px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 80px;
+
+    z-index: 10;
+
+    animation: crownGlow 2s infinite alternate;
+}
+
+
+/* ================================
+   HEAD
+================================ */
+
+.head {
+    position: absolute;
+
+    top: 30px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 250px;
+    height: 220px;
+
+    background: linear-gradient(
+        135deg,
+        #ffb347,
+        #e87520,
+        #b83b08
+    );
+
+    border-radius: 48% 48% 45% 45%;
+
+    box-shadow:
+        inset -15px -15px 25px rgba(90, 20, 0, 0.3),
+        0 0 30px #ff9d00;
+}
+
+
+/* ================================
+   EARS
+================================ */
+
+.ear {
+    position: absolute;
+
+    top: 45px;
+
+    width: 100px;
+    height: 130px;
+
+    background: linear-gradient(
+        135deg,
+        #ffb347,
+        #d95712
+    );
+
+    border-radius: 50%;
+
+    font-size: 0;
+
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.7);
+}
+
+.left-ear {
+    left: -55px;
+    transform: rotate(-20deg);
+}
+
+.right-ear {
+    right: -55px;
+    transform: rotate(20deg);
+}
+
+
+/* ================================
+   FACE
+================================ */
+
+.face {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Tilak */
+
+.tilak {
+    position: absolute;
+
+    top: 25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 38px;
+
+    color: #fff;
+
+    animation: glow 1.5s infinite alternate;
+}
+
+
+/* Eyes */
+
+.eyes {
+    position: absolute;
+
+    top: 90px;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 65px;
+}
+
+.eyes span {
+    width: 13px;
+    height: 20px;
+
+    background: #2a0900;
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 10px #fff;
+}
+
+
+/* ================================
+   TRUNK
+================================ */
+
+.trunk {
+    position: absolute;
+
+    top: 105px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 75px;
+    height: 125px;
+
+    background: linear-gradient(
+        90deg,
+        #d95712,
+        #ffb347,
+        #d95712
+    );
+
+    border-radius: 45px;
+
+    z-index: 5;
+
+    animation: trunkMove 3s ease-in-out infinite;
+}
+
+.trunk-tip {
+    position: absolute;
+
+    bottom: -5px;
+    left: 25px;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    border-bottom: 8px solid #a52f05;
+}
+
+
+/* ================================
+   TUSKS
+================================ */
+
+.tusk {
+    position: absolute;
+
+    top: 135px;
+
+    font-size: 70px;
+
+    color: white;
+
+    text-shadow: 0 0 8px #fff;
+}
+
+.left-tusk {
+    left: 35px;
+}
+
+.right-tusk {
+    right: 35px;
+}
+
+
+/* ================================
+   BODY
+================================ */
+
+.body {
+    position: absolute;
+
+    top: 220px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 260px;
+    height: 150px;
+
+    background: linear-gradient(
+        135deg,
+        #ff9b35,
+        #d95612
+    );
+
+    border-radius: 50% 50% 40% 40%;
+
+    box-shadow: 0 0 25px #ff8c00;
+}
+
+
+/* Belly */
+
+.belly {
+    position: absolute;
+
+    left: 50%;
+    top: 25px;
+
+    transform: translateX(-50%);
+
+    font-size: 65px;
+}
+
+
+/* Arms */
+
+.arm {
+    position: absolute;
+
+    top: 20px;
+
+    font-size: 50px;
+}
+
+.left-arm {
+    left: -45px;
+
+    transform: rotate(-15deg);
+}
+
+.right-arm {
+    right: -45px;
+
+    transform: rotate(15deg);
+}
+
+
+/* ================================
+   FEET
+================================ */
+
+.feet {
+    position: absolute;
+
+    bottom: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 70px;
+
+    font-size: 45px;
+}
+
+
+/* ================================
+   MOUSE
+================================ */
+
+.mouse {
+    position: absolute;
+
+    bottom: 105px;
+    right: 20%;
+
+    font-size: 55px;
+
+    animation: mouseMove 4s ease-in-out infinite;
+}
+
+
+/* ================================
+   DIYA
+================================ */
+
+.diya {
+    position: absolute;
+
+    bottom: 60px;
+    left: 18%;
+
+    font-size: 55px;
+}
+
+.flame {
+    position: absolute;
+
+    width: 18px;
+    height: 35px;
+
+    background: #fff3a1;
+
+    border-radius: 50%;
+
+    top: -18px;
+    left: 18px;
+
+    box-shadow:
+        0 0 15px #fff,
+        0 0 30px #ff9d00;
+
+    animation: flame 0.5s infinite alternate;
+}
+
+
+/* ================================
+   TEXT
+================================ */
+
+h1 {
+    margin-top: 10px;
+
+    font-size: 32px;
+
+    color: #ffe8a3;
+
+    text-shadow:
+        0 0 10px #fff,
+        0 0 20px #ff8c00;
+
+    animation: glow 2s infinite alternate;
+}
+
+.mantra {
+    margin-top: 10px;
+
+    font-size: 25px;
+
+    color: #fff5cf;
+
+    letter-spacing: 3px;
+}
+
+
+/* ================================
+   BUTTON
+================================ */
+
+button {
+    margin-top: 20px;
+
+    padding: 12px 25px;
+
+    border: 2px solid #ffd86b;
+
+    border-radius: 30px;
+
+    background: rgba(255, 160, 0, 0.2);
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff9800;
+
+    transform: scale(1.08);
+
+    box-shadow: 0 0 25px #ffb300;
+}
+
+
+/* Message */
+
+#message {
+    margin-top: 15px;
+
+    font-size: 20px;
+
+    color: #ffe8a3;
+}
+
+
+/* ================================
+   PARTICLES
+================================ */
+
+.particles {
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+
+    background: #ffd86b;
+
+    box-shadow: 0 0 10px #fff;
+
+    animation: particleFloat linear infinite;
+}
+
+
+/* ================================
+   ANIMATIONS
+================================ */
+
+@keyframes float {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+
+@keyframes glow {
+
+    from {
+        text-shadow: 0 0 5px #fff;
+    }
+
+    to {
+        text-shadow:
+            0 0 15px #fff,
+            0 0 30px #ff9800;
+    }
+}
+
+
+@keyframes crownGlow {
+
+    from {
+        filter: drop-shadow(0 0 5px #ffd700);
+    }
+
+    to {
+        filter: drop-shadow(0 0 25px #fff000);
+    }
+}
+
+
+@keyframes flame {
+
+    from {
+        transform: scale(0.8) rotate(-5deg);
+    }
+
+    to {
+        transform: scale(1.2) rotate(5deg);
+    }
+}
+
+
+@keyframes trunkMove {
+
+    0%, 100% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(-50%) rotate(5deg);
+    }
+}
+
+
+@keyframes mouseMove {
+
+    0%, 100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-30px);
+    }
+}
+
+
+@keyframes rotate {
+
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+
+@keyframes appear {
+
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+@keyframes particleFloat {
+
+    from {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-10vh);
+        opacity: 0;
+    }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    .ganesha {
+        transform: scale(0.75);
+    }
+
+    .mouse {
+        right: 5%;
+        bottom: 80px;
+    }
+
+    .diya {
+        left: 5%;
+        bottom: 50px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .mantra {
+        font-size: 18px;
+    }
+}
